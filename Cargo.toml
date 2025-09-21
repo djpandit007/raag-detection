@@ -6,6 +6,7 @@ edition = "2021"
 [dependencies]
 # Audio processing
 hound = "3.5"
+symphonia = { version = "0.5", features = ["mp3", "flac", "ogg"] }
 rustfft = "6.2"
 ndarray = "0.15"
 
