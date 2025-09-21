@@ -46,7 +46,7 @@ techniques.
 
 ## Technical Notes
 
-- Currently implements basic Raag Yaman as reference
+- Currently implements Raag Yaman and Raag Bhairavi as references
 - Uses simplified autocorrelation for pitch detection
 - Chromagram maps frequencies to 12 semitone bins
 - Tonic (Sa) detection uses histogram-based frequency analysis

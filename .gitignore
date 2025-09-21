@@ -21,6 +21,7 @@ target
 #.idea/
 
 audio/
+.DS_Store
 
 
 # VSCode directory

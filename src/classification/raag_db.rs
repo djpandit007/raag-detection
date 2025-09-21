@@ -71,6 +71,52 @@ impl RaagDatabase {
                 characteristic_phrases: vec![],
                 thaat: "Kalyan".to_string(),
             },
+            // Raag Bhairavi
+            Raag {
+                name: "Bhairavi".to_string(),
+                aroha: vec![
+                    Note { name: "Sa".to_string(), frequency_ratio: 1.0 },
+                    Note { name: "Re♭".to_string(), frequency_ratio: 16.0/15.0 },
+                    Note { name: "Ga♭".to_string(), frequency_ratio: 6.0/5.0 },
+                    Note { name: "Ma".to_string(), frequency_ratio: 4.0/3.0 },
+                    Note { name: "Pa".to_string(), frequency_ratio: 3.0/2.0 },
+                    Note { name: "Dha♭".to_string(), frequency_ratio: 8.0/5.0 },
+                    Note { name: "Ni♭".to_string(), frequency_ratio: 16.0/9.0 },
+                ],
+                avaroha: vec![
+                    Note { name: "Sa".to_string(), frequency_ratio: 2.0 },
+                    Note { name: "Ni♭".to_string(), frequency_ratio: 16.0/9.0 },
+                    Note { name: "Dha♭".to_string(), frequency_ratio: 8.0/5.0 },
+                    Note { name: "Pa".to_string(), frequency_ratio: 3.0/2.0 },
+                    Note { name: "Ma".to_string(), frequency_ratio: 4.0/3.0 },
+                    Note { name: "Ga♭".to_string(), frequency_ratio: 6.0/5.0 },
+                    Note { name: "Re♭".to_string(), frequency_ratio: 16.0/15.0 },
+                    Note { name: "Sa".to_string(), frequency_ratio: 1.0 },
+                ],
+                vadi: Note { name: "Ma".to_string(), frequency_ratio: 4.0/3.0 },
+                samvadi: Note { name: "Sa".to_string(), frequency_ratio: 1.0 },
+                characteristic_phrases: vec![
+                    PhrasePattern {
+                        notes: vec![
+                            Note { name: "Dha♭".to_string(), frequency_ratio: 8.0/5.0 },
+                            Note { name: "Ma".to_string(), frequency_ratio: 4.0/3.0 },
+                            Note { name: "Ga♭".to_string(), frequency_ratio: 6.0/5.0 },
+                            Note { name: "Re♭".to_string(), frequency_ratio: 16.0/15.0 },
+                            Note { name: "Sa".to_string(), frequency_ratio: 1.0 },
+                        ],
+                        weight: 0.8, // High importance - characteristic descending phrase
+                    },
+                    PhrasePattern {
+                        notes: vec![
+                            Note { name: "Sa".to_string(), frequency_ratio: 1.0 },
+                            Note { name: "Ga♭".to_string(), frequency_ratio: 6.0/5.0 },
+                            Note { name: "Ma".to_string(), frequency_ratio: 4.0/3.0 },
+                        ],
+                        weight: 0.7, // Pakad phrase
+                    },
+                ],
+                thaat: "Bhairavi".to_string(),
+            },
             // Add more raags here as needed
         ]
     }
